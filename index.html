@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aksara</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navbar start -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16"
+      >
+        <!-- Logo -->
+        <div class="text-2xl font-bold text-blue-600">FerTrack</div>
+
+        <!-- Menu Desktop -->
+        <nav class="hidden md:flex space-x-8 text-gray-700 font-medium">
+          <a href="#home" class="hover:text-blue-600 transition">Home</a>
+          <a href="#fitur" class="hover:text-blue-600 transition">Fitur</a>
+          <a href="#testimoni" class="hover:text-blue-600 transition"
+            >Testimoni</a
+          >
+          <a href="#harga" class="hover:text-blue-600 transition">Harga</a>
+          <a href="#kontak" class="hover:text-blue-600 transition">Kontak</a>
+        </nav>
+
+        <!-- CTA Button -->
+        <div class="hidden md:block">
+          <a
+            href="#daftar"
+            class="bg-blue-600 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-700 transition"
+          >
+            Daftar Gratis
+          </a>
+        </div>
+
+        <!-- Hamburger Menu -->
+        <div class="md:hidden flex items-center">
+          <button id="menu-btn" class="text-gray-700 focus:outline-none">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
+        <a href="#home" class="block py-2 text-gray-700 hover:text-blue-600"
+          >Home</a
+        >
+        <a href="#fitur" class="block py-2 text-gray-700 hover:text-blue-600"
+          >Fitur</a
+        >
+        <a
+          href="#testimoni"
+          class="block py-2 text-gray-700 hover:text-blue-600"
+          >Testimoni</a
+        >
+        <a href="#harga" class="block py-2 text-gray-700 hover:text-blue-600"
+          >Harga</a
+        >
+        <a href="#kontak" class="block py-2 text-gray-700 hover:text-blue-600"
+          >Kontak</a
+        >
+        <a
+          href="#daftar"
+          class="block mt-2 bg-blue-600 text-white px-4 py-2 rounded-lg text-center hover:bg-blue-700"
+        >
+          Daftar Gratis
+        </a>
+      </div>
+    </header>
+    <!-- navbar end -->
+    <!-- section 1 -->
+    <section id="home" class="bg-[#C6E7FF] py-16">
+      <div
+        class="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col-reverse lg:flex-row items-center gap-10"
+      >
+        <!-- Teks Hero -->
+        <div class="lg:w-1/2 text-center lg:text-left">
+          <h1
+            class="text-4xl md:text-5xl font-bold text-gray-800 leading-tight"
+          >
+            Kelola Keuanganmu <br class="hidden md:block" />
+            <span class="text-blue-600">Lebih Mudah dan Cerdas</span>
+          </h1>
+          <p class="mt-4 text-lg text-gray-700">
+            Aplikasi yang membantumu mengatur pemasukan, pengeluaran, dan tujuan
+            keuangan
+          </p>
+          <a
+            href="#daftar"
+            class="mt-6 inline-block bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition"
+          >
+            Mulai Sekarang
+          </a>
+        </div>
+
+        <!-- Gambar / Mockup -->
+        <div class="lg:w-1/2">
+          <img
+            src="dashboard.svg"
+            alt="Mockup Dashboard FerTrack"
+            class="w-full rounded-xl shadow-lg"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- section 2 -->
+    <section id="fitur" class="bg-white py-20">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+        <!-- Judul Section -->
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800">
+          Fitur Unggulan FerTrack
+        </h2>
+        <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
+          Dirancang untuk memudahkan kamu mengelola keuangan pribadi secara
+          efisien dan otomatis.
+        </p>
+
+        <!-- Grid Fitur -->
+        <div class="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+          <!-- Fitur 1 -->
+          <div
+            class="bg-[#D4F6FF] p-6 rounded-xl shadow hover:shadow-md transition"
+          >
+            <div class="text-blue-600 mb-4">
+              <svg
+                class="w-10 h-10 mx-auto"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 14l-2-2m0 0l2-2m-2 2h8m6 4V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2z"
+                />
+              </svg>
+            </div>
+            <h3 class="font-semibold text-lg text-gray-800">
+              Pelacakan Pengeluaran
+            </h3>
+            <p class="mt-2 text-gray-600 text-sm">
+              Catat semua pengeluaran dengan mudah dan otomatis.
+            </p>
+          </div>
+
+          <!-- Fitur 2 -->
+          <div
+            class="bg-[#D4F6FF] p-6 rounded-xl shadow hover:shadow-md transition"
+          >
+            <div class="text-blue-600 mb-4">
+              <svg
+                class="w-10 h-10 mx-auto"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3 3v18h18M3 9h18M9 21V9"
+                />
+              </svg>
+            </div>
+            <h3 class="font-semibold text-lg text-gray-800">
+              Laporan Keuangan Otomatis
+            </h3>
+            <p class="mt-2 text-gray-600 text-sm">
+              Dapatkan laporan keuangan harian, mingguan, dan bulanan.
+            </p>
+          </div>
+
+          <!-- Fitur 3 -->
+          <div
+            class="bg-[#D4F6FF] p-6 rounded-xl shadow hover:shadow-md transition"
+          >
+            <div class="text-blue-600 mb-4">
+              <svg
+                class="w-10 h-10 mx-auto"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 8c1.333 0 4 1.333 4 4s-2.667 4-4 4-4-1.333-4-4 2.667-4 4-4zm0 0V5m0 14v-3"
+                />
+              </svg>
+            </div>
+            <h3 class="font-semibold text-lg text-gray-800">Target Tabungan</h3>
+            <p class="mt-2 text-gray-600 text-sm">
+              Buat dan pantau target keuangan secara berkala.
+            </p>
+          </div>
+
+          <!-- Fitur 4 -->
+          <div
+            class="bg-[#D4F6FF] p-6 rounded-xl shadow hover:shadow-md transition"
+          >
+            <div class="text-blue-600 mb-4">
+              <svg
+                class="w-10 h-10 mx-auto"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6 6 0 00-9.33-5M9 17H4l1.405-1.405A2.032 2.032 0 006 14.158V11a6 6 0 119 5.197"
+                />
+              </svg>
+            </div>
+            <h3 class="font-semibold text-lg text-gray-800">
+              Notifikasi Pengingat
+            </h3>
+            <p class="mt-2 text-gray-600 text-sm">
+              Jangan sampai lupa bayar tagihan atau mencapai targetmu.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="testimoni" class="bg-[#FBFBFB] py-20">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+        <!-- Judul Section -->
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800">
+          Apa Kata Pengguna Kami?
+        </h2>
+        <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
+          Ribuan pengguna telah merasakan manfaat dari FerTrack dalam mengelola
+          keuangan mereka.
+        </p>
+
+        <!-- Grid Testimoni -->
+        <div class="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <!-- Testimoni 1 -->
+          <div class="bg-white p-6 rounded-xl shadow-md">
+            <img
+              src="https://i.pravatar.cc/100?img=1"
+              alt="User 1"
+              class="w-12 h-12 rounded-full mx-auto mb-4"
+            />
+            <h4 class="text-lg font-semibold text-gray-800">Andi Saputra</h4>
+            <p class="mt-2 text-gray-600 text-sm">
+              “FerTrack bantu banget untuk atur pengeluaran bulanan saya. UI-nya
+              juga simple!”
+            </p>
+          </div>
+
+          <!-- Testimoni 2 -->
+          <div class="bg-white p-6 rounded-xl shadow-md">
+            <img
+              src="https://i.pravatar.cc/100?img=2"
+              alt="User 2"
+              class="w-12 h-12 rounded-full mx-auto mb-4"
+            />
+            <h4 class="text-lg font-semibold text-gray-800">Maya Lestari</h4>
+            <p class="mt-2 text-gray-600 text-sm">
+              “Laporan otomatis dari FerTrack bikin saya sadar pola belanja yang
+              boros.”
+            </p>
+          </div>
+
+          <!-- Testimoni 3 -->
+          <div class="bg-white p-6 rounded-xl shadow-md">
+            <img
+              src="https://i.pravatar.cc/100?img=3"
+              alt="User 3"
+              class="w-12 h-12 rounded-full mx-auto mb-4"
+            />
+            <h4 class="text-lg font-semibold text-gray-800">Rizky Hakim</h4>
+            <p class="mt-2 text-gray-600 text-sm">
+              “Target tabungan saya sekarang lebih terarah. Fiturnya sangat
+              membantu!”
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="harga" class="bg-white py-20">
+      <div class="max-w-7xl mx-auto px-6 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800">
+          Pilih Paket Sesuai Kebutuhanmu
+        </h2>
+        <p class="mt-4 text-gray-600 max-w-xl mx-auto">
+          Mulai dari versi gratis hingga fitur lengkap untuk pengelolaan
+          keuangan yang profesional.
+        </p>
+
+        <!-- Kartu Harga -->
+        <div class="mt-12 grid gap-8 md:grid-cols-3">
+          <!-- Paket Gratis -->
+          <div
+            class="border rounded-2xl p-8 shadow-sm hover:shadow-lg transition duration-300"
+          >
+            <h3 class="text-xl font-semibold text-gray-700">Gratis</h3>
+            <p class="text-3xl font-bold text-blue-500 mt-4">Rp0</p>
+            <ul class="mt-6 space-y-2 text-gray-600 text-sm">
+              <li>✓ Catat pemasukan & pengeluaran</li>
+              <li>✓ 1 akun pengguna</li>
+              <li>✗ Laporan otomatis</li>
+              <li>✗ Target tabungan</li>
+            </ul>
+            <button
+              class="mt-6 w-full bg-blue-100 text-blue-600 font-semibold py-2 rounded-lg hover:bg-blue-200"
+            >
+              Gunakan Gratis
+            </button>
+          </div>
+
+          <!-- Paket Pro -->
+          <div
+            class="border-2 border-blue-500 rounded-2xl p-8 shadow-md hover:shadow-xl transition duration-300 bg-blue-50"
+          >
+            <h3 class="text-xl font-semibold text-blue-700">Pro</h3>
+            <p class="text-3xl font-bold text-blue-600 mt-4">Rp49.000</p>
+            <ul class="mt-6 space-y-2 text-gray-700 text-sm">
+              <li>✓ Semua fitur Gratis</li>
+              <li>✓ Laporan otomatis</li>
+              <li>✓ Target tabungan</li>
+              <li>✗ Dukungan prioritas</li>
+            </ul>
+            <button
+              class="mt-6 w-full bg-blue-600 text-white font-semibold py-2 rounded-lg hover:bg-blue-700"
+            >
+              Coba Pro
+            </button>
+          </div>
+
+          <!-- Paket Premium -->
+          <div
+            class="border rounded-2xl p-8 shadow-sm hover:shadow-lg transition duration-300"
+          >
+            <h3 class="text-xl font-semibold text-gray-700">Premium</h3>
+            <p class="text-3xl font-bold text-blue-500 mt-4">Rp99.000</p>
+            <ul class="mt-6 space-y-2 text-gray-600 text-sm">
+              <li>✓ Semua fitur Pro</li>
+              <li>✓ Dukungan prioritas</li>
+              <li>✓ Integrasi API</li>
+              <li>✓ Backup otomatis</li>
+            </ul>
+            <button
+              class="mt-6 w-full bg-blue-100 text-blue-600 font-semibold py-2 rounded-lg hover:bg-blue-200"
+            >
+              Ambil Premium
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-[#D4F6FF] py-12">
+      <div
+        class="max-w-7xl mx-auto px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-10 text-gray-700"
+      >
+        <!-- Kolom 1: Logo dan Deskripsi -->
+        <div>
+          <h1 class="text-2xl font-bold text-blue-700">FerTrack</h1>
+          <p class="mt-3 text-gray-600 max-w-sm">
+            FerTrack membantu kamu mengelola keuangan pribadi dengan mudah,
+            cerdas, dan efisien. Mulai atur pemasukan, pengeluaran, dan tujuan
+            tabunganmu hari ini!
+          </p>
+        </div>
+
+        <!-- Kolom 2: Link Navigasi -->
+        <div>
+          <h2 class="text-lg font-semibold mb-4">Navigasi</h2>
+          <ul class="space-y-2">
+            <li>
+              <a href="#home" class="hover:text-blue-600 transition">Home</a>
+            </li>
+            <li>
+              <a href="#fitur" class="hover:text-blue-600 transition">Fitur</a>
+            </li>
+            <li>
+              <a href="#testimoni" class="hover:text-blue-600 transition"
+                >Testimoni</a
+              >
+            </li>
+            <li>
+              <a href="#harga" class="hover:text-blue-600 transition">Harga</a>
+            </li>
+            <li>
+              <a href="#kontak" class="hover:text-blue-600 transition"
+                >Kontak</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Kolom 3: Kontak dan Sosial Media -->
+        <div>
+          <h2 class="text-lg font-semibold mb-4">Kontak Kami</h2>
+          <p>
+            Email:
+            <a
+              href="mailto:info@fertrack.com"
+              class="text-blue-600 hover:underline"
+              >info@fertrack.com</a
+            >
+          </p>
+          <p>
+            Telepon:
+            <a href="tel:+628123456789" class="text-blue-600 hover:underline"
+              >+62 812-3456-789</a
+            >
+          </p>
+          <div class="mt-4 flex space-x-4">
+            <a
+              href="#"
+              aria-label="Facebook"
+              class="text-blue-600 hover:text-blue-800 transition"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M22 12c0-5.522-4.477-10-10-10S2 6.478 2 12c0 4.991 3.657 9.128 8.438 9.879v-6.987H7.898v-2.892h2.54v-2.205c0-2.507 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.462h-1.26c-1.243 0-1.63.772-1.63 1.562v1.876h2.773l-.443 2.892h-2.33v6.987C18.343 21.128 22 16.991 22 12z"
+                />
+              </svg>
+            </a>
+            <a
+              href="#"
+              aria-label="Twitter"
+              class="text-blue-600 hover:text-blue-800 transition"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M23 3a10.9 10.9 0 01-3.14.86 4.48 4.48 0 001.98-2.48 10.85 10.85 0 01-3.44 1.31 4.52 4.52 0 00-7.7 4.13A12.82 12.82 0 013 4.15a4.51 4.51 0 001.39 6.03 4.42 4.42 0 01-2.05-.56v.06a4.53 4.53 0 003.63 4.43 4.54 4.54 0 01-2.04.08 4.53 4.53 0 004.22 3.14A9.07 9.07 0 012 19.54a12.77 12.77 0 006.92 2.03c8.3 0 12.85-6.88 12.85-12.84 0-.2 0-.39-.02-.58A9.18 9.18 0 0023 3z"
+                />
+              </svg>
+            </a>
+            <a
+              href="#"
+              aria-label="Instagram"
+              class="text-blue-600 hover:text-blue-800 transition"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 2A3.75 3.75 0 004 7.75v8.5A3.75 3.75 0 007.75 20h8.5a3.75 3.75 0 003.75-3.75v-8.5A3.75 3.75 0 0016.25 4h-8.5zm8.5 1.5a.75.75 0 110 1.5.75.75 0 010-1.5zM12 7a5 5 0 110 10 5 5 0 010-10zm0 2a3 3 0 100 6 3 3 0 000-6z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hak Cipta -->
+      <div
+        class="mt-12 border-t border-gray-300 pt-6 text-center text-gray-500 text-sm"
+      >
+        &copy; 2025 FerTrack. Semua hak cipta dilindungi.
+      </div>
+    </footer>
+
+    <script>
+      // Toggle mobile menu
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
