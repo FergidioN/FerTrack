@@ -70,7 +70,10 @@
       </div>
 
       <!-- Mobile Menu -->
-      <div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
+      <div
+        id="mobile-menu"
+        class="md:hidden absolute bg-white w-full left-0 top-16 shadow-lg rounded-b-lg z-50 transition-all duration-200 ease-in-out transform scale-100 opacity-100 hidden"
+      >
         <a href="#home" class="block py-2 text-gray-700 hover:text-blue-600"
           >Home</a
         >
@@ -502,9 +505,42 @@
     </footer>
 
     <script>
+      const mobileMenu = document.getElementById("mobile-menu");
+      const hamburgerBtn = document.getElementById("hamburger-button");
+      const navLinks = document.querySelectorAll("#mobile-menu a");
+
+      navLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          // Setelah klik link navigasi
+          mobileMenu.classList.add("opacity-0");
+          mobileMenu.classList.remove("opacity-100", "scale-100");
+
+          setTimeout(() => {
+            mobileMenu.classList.add("hidden");
+          }, 200); // Waktu tunggu sinkron dengan animasi
+        });
+      });
+
+      // Toggle fungsi menu
+      hamburgerBtn.addEventListener("click", () => {
+        const isHidden = mobileMenu.classList.contains("hidden");
+
+        if (isHidden) {
+          mobileMenu.classList.remove("hidden");
+          setTimeout(() => {
+            mobileMenu.classList.remove("opacity-0");
+            mobileMenu.classList.add("opacity-100", "scale-100");
+          }, 10);
+        } else {
+          mobileMenu.classList.add("opacity-0");
+          mobileMenu.classList.remove("opacity-100", "scale-100");
+          setTimeout(() => {
+            mobileMenu.classList.add("hidden");
+          }, 200);
+        }
+      });
       // Toggle mobile menu
       const menuBtn = document.getElementById("menu-btn");
-      const mobileMenu = document.getElementById("mobile-menu");
 
       menuBtn.addEventListener("click", () => {
         mobileMenu.classList.toggle("hidden");
